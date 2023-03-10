@@ -13,11 +13,13 @@ namespace PerguntaValores
 
             int area = Convert.ToInt32(areaquestion);
             int radius = Convert.ToInt32(radiusquestion);
+            double value = Math.PI * Math.Pow(radius, 2) * area;
 
-            float pi = 3.1415926f;
-            float V = pi * radius * radius * area;
+            Console.WriteLine($"The cylinder's volume is: {value}");
 
-            Console.WriteLine($"The cylinder's volume is: {V}");
+            double s = 2 * Math.PI * radius * (radius + area);
+
+            Console.WriteLine($"The cylinder's surface area is: {s}");
         }
     }
 }
