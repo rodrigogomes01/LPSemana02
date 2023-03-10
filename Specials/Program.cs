@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Specials
+﻿namespace Specials
 {
     class Program
     {
@@ -28,6 +26,27 @@ namespace Specials
             Console.WriteLine(double.PositiveInfinity);
             Console.WriteLine(double.NegativeInfinity);
             Console.WriteLine(double.NaN);
+            int i1 = short.MaxValue;
+            int i2 = short.MinValue;
+            int i3 = sbyte.MaxValue;
+            int i4 = sbyte.MinValue;
+            Console.WriteLine((short) (n1 + 1));
+            Console.WriteLine((short) (n2 - 1));
+            Console.WriteLine((sbyte) (n3 + 1));
+            Console.WriteLine((sbyte) (n4 - 1));
+            double n5 = 2 * double.MaxValue;
+            float n6 = -2 * float.MaxValue;
+            Console.WriteLine(i5);
+            Console.WriteLine(i6);
+
+            float n7, n8;
+            double n9, n10;
+            n7 = n8 = 89239.0f;
+            n9 = n10 = 294829.0f;
+
+            Console.WriteLine(n7 == n8 + 0.001f);
+            
+            Console.WriteLine(n9 == n10 + 0.000000000001f);
         }
     }
 }
